@@ -2,7 +2,7 @@
   "name": "express-graphql-yoga-compression",
   "version": "0.0.0",
   "scripts": {
-    "start": "nodemon --exec ts-node index.ts"
+    "start": "nodemon --exec ts-node ./src/index.ts"
   },
   "dependencies": {
     "body-parser": "1.20.1",
