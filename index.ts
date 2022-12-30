@@ -1,11 +1,10 @@
-
 import bodyParser from "body-parser";
 import compression from "compression";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import express from "express";
-import { createYoga, createSchema } from "graphql-yoga";
-import { createServer } from "http";
+import {createYoga, createSchema} from "graphql-yoga";
+import {createServer} from "http";
 
 const app = express();
 
@@ -19,8 +18,8 @@ app.use(
     })
 );
 
-app.use(bodyParser.json({ limit: "20mb" }));
-app.use(cors({ origin: true, credentials: true, maxAge: 10000000 }));
+app.use(bodyParser.json({limit: "20mb"}));
+app.use(cors({origin: true, credentials: true, maxAge: 10000000}));
 
 export const yogaGraphQL = createYoga({
     schema: createSchema({
