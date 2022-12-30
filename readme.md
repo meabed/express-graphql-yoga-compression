@@ -8,7 +8,7 @@
 
 if you comment out the `app.use(compression())` line in `index.ts` the error will go away.
 
-The error is and it happened on version 3.2.0 and 3.2.1 ( if yo downgrade to 3.1.2 it works fine )
+The error is, and it happened on version 3.2.0 and 3.2.1 ( if yo downgrade to 3.1.2 it works fine )
 ```
 TypeError [ERR_INVALID_ARG_TYPE]: The first argument must be of type string or an instance of Buffer, ArrayBuffer, or Array or an Array-like Object. Received type function ([Function (anonymous)])
     at new NodeError (node:internal/errors:400:5)
